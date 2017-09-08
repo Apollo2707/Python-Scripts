@@ -5,7 +5,6 @@ import HTMLParser
 import urllib
 import argparse
 from pprint import pprint
-from optparse import OptionParser
 
 CheckedList = []
 ToCheckList = []

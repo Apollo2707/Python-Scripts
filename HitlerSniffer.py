@@ -4,16 +4,17 @@
 import HTMLParser
 import urllib
 from pprint import pprint
-from optparse import OptionParser
+import argparse
 
 CheckedList = []
 ToCheckList = []
 #Option Parser
-parser = OptionParser()
-parser.add_option("-u", "--url", dest="url",
-                  help="which url to start at", metavar="url")
-(options, args) = parser.parse_args()
-thisurl = options.url
+parser = argparse.ArgumentParser(description='Searches for a specified keyword through all links')
+parser.add_argument('URL',
+                    help='Starting webpage for Spider Search')
+
+args = parser.parse_args()
+thisurl = args.URL
 ToCheckList.append(thisurl)
 
 #      Define HTML Parser
