@@ -58,15 +58,15 @@ while Counter < 10:
             lParser.rootURL = link[0:link[8:len(link)].find("/")+8]
             lParser.feed(urllib.urlopen(link).read())
             if lParser.Search:
-                print "{0} at {1}".format(SearchValue,link)
-                print "Found on Wave {}".format(Counter)
+                print "[!]{0} at {1}".format(SearchValue,link)
+                print "[!] Found on Wave {}".format(Counter)
                 Counter = 11
                 break
             lParser.close()
-            print ("%Checked% {}".format(link))
+            print ("[%] Checked {}".format(link))
         except:
             pass
-            print ("@invalid@ {}".format(link))
+            print ("[?] Invalid {}".format(link))
         CheckedList.append(link)
 
     ToCheckList = []
