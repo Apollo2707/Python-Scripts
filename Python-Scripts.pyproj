@@ -28,7 +28,7 @@
     <Compile Include="SimpleWebCrawlerV1.py" />
     <Compile Include="SpiderSearch.py" />
     <Compile Include="stringtest.py" />
-    <Compile Include="TCPClientTest.py" />
+    <Compile Include="SimpleChat.py" />
     <Compile Include="TCPServer.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
