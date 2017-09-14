@@ -24,6 +24,7 @@
     <Compile Include="NetcatExample.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PYQTTest.py" />
     <Compile Include="SimpleWebCrawlerV1.py" />
     <Compile Include="SpiderSearch.py" />
     <Compile Include="stringtest.py" />
